@@ -2,25 +2,25 @@ class Pick < Formula
   desc "Extract, filter, and transform values from JSON, YAML, TOML, .env, headers, logfmt, CSV, and more"
   homepage "https://pick-cli.pages.dev"
   license "MIT"
-  version "0.1.23"
+  version "0.1.24"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/aryanbhosale/pick/releases/download/v#{version}/pick-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "1fa68281cc9470ad48d1cdd2f226c3411185cb63a991665fcdaa0680c06e7f4a"
+      sha256 "2805576dc84f2d366bf86695c5ecaa88958373bc5ca22afe7ca02248dca315ce"
     else
       url "https://github.com/aryanbhosale/pick/releases/download/v#{version}/pick-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "b2c637bb76f6b784915708072bc90fb05898a55da61366b7a1a088b67ac93224"
+      sha256 "48ab7e2d1f61007e1f314dd6a462c6421d4430f3dfba224045ded5c6afa4e87c"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/aryanbhosale/pick/releases/download/v#{version}/pick-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "bdf9a33dff5ecd3bbe2b5616c819a7cc37197a20a3393f668ad0e90017cf4c4e"
+      sha256 "797a33f0885b7b11319090b20403223cecbd307d22936a4548204973e23c0d33"
     else
       url "https://github.com/aryanbhosale/pick/releases/download/v#{version}/pick-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "400ec9fbfb431879c7ef45af8804a08b03bf2cf3e12f8d6b0357af87d48f1db9"
+      sha256 "7eeaaa90f135709551cf9e60505d6acf9c20f02e15ba968a87c995bbdf3c68c7"
     end
   end
 
